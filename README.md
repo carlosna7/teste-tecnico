@@ -1,69 +1,34 @@
-<p align="center">
-  <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/licenciamento/" target="blank"><img src="https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/chamadas/URBANISMO_E_LICENCIAMENTO_HORIZONTAL_FUNDO_CLARO_1665756993.png" width="200" alt="SMUL Logo" /></a>
-</p>
-
-<p align="center">Teste técnico - SMUL/ATIC</p>
-
-## Descrição
-
-Repositório de teste técnico.
-Documentação de tecnologia utilizada:
-
-- NESTJS: https://docs.nestjs.com/
-- PRISMAIO: https://www.prisma.io/docs/getting-started
-
-## Instalação
-
-```bash
-npm install
-```
-
-## Criando o banco de dados
-
-```bash
-npx prisma migrate dev
-```
-
-## Rodando o app
-
-```bash
-# modo de monitoramento
-npm run dev
-```
-
-## O Teste
-
-A ideia é criar um sistema básico de calculadora, que execute as 4 operações básicas. <br />
-Como exemplo, a operação de adição já está implementada na URL:
-
-```bash
-/operacoes/adicao
-```
-
-Além de delvover o resultado da operação como resposta para a request, também é necessário salvar os registros das operações feitas em banco de dados (SQLite). <br />
-Para consultar o que foi inserido em banco de dados, será criado um endpoint que retorne todas as operações salvas. <br />
-Caso o usuário queira, também será possível filtrar pelo tipo de operação. Mas caso contrário, retornar todas, independente do tipo. <br />
-
 ## Tarefa 1
 
-Criar os endpoints para as demais operações matemáticas básicas:
-  - subtração
-  - multiplicação
-  - divisão
+Criação dos endpoints para as operações matemáticas básicas:
 
-Registrando as operações realizadas em banco de dados e seguindo o exemplo de urls:
-  - /operacoes/adicao
-  - /operacoes/subtracao
-  - /operacoes/multiplicacao
-  - /operacoes/divisao
+- Adição:
+<img src="src/imagens/operation1.png" alt="Texto Alternativo">
+
+- Subtração:
+<img src="src/imagens/operation2.png" alt="Texto Alternativo">
+
+- Multiplicação:
+<img src="src/imagens/operation3.png" alt="Texto Alternativo">
+
+- Divisão:
+<img src="src/imagens/operation4.png" alt="Texto Alternativo">
 
 ## Tarefa 2
 
-Criar endpoint para consultar todas as operações registradas, com a possibilidade de filtragem por tipo de operação, conforme o exemplo:
-  - /operacoes/listar?tipo=1
+Criação dos endpoint para consultar todas as operações registradas e filtrar a pesquisa por tipo de operação:
 
-Onde:
-  - 1 = Adição
-  - 2 = Subtração
-  - 3 = Multiplicação
-  - 4 = Divisão
+- Listar Todas:
+<img src="src/imagens/listAll.png.png" alt="Texto Alternativo">
+
+- Listar Adição:
+<img src="src/imagens/getType1.png.png" alt="Texto Alternativo">
+
+- Listar Subtração:
+<img src="src/imagens/getType2.png" alt="Texto Alternativo">
+
+- Listar Multiplicação:
+<img src="src/imagens/getType3.png" alt="Texto Alternativo">
+
+- Listar Divisão:
+<img src="src/imagens/getType4.png" alt="Texto Alternativo">
